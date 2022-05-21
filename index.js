@@ -1,9 +1,6 @@
-const inquirer = require('inquirer');
 const fs = require('fs');
-const fileName = './dist/index.html';
-
-const generateWebSite = require('./src/webSite');
-
+const inquirer = require('inquirer');
+const generateWebSite = require('./src/generateWebSite');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
@@ -106,7 +103,7 @@ function menuFunction() {
         }
         else{
             console.log("finish build the team")
-            writeFile(fileName, generateWebSite);
+            writeFile(generateWebSite(team));
         }
     })
 }
@@ -129,10 +126,14 @@ function internFunction() {
     })
 }
 
-function writeFile(fileName, data) {
-    fs.writeFile(fileName,data,err=>
+function writeFile(data) {
+    fs.writeFile('./dist/index.html', data, err=>
         err ? console.log(err) : console.log('Success!'))
 }
   
+function init () { 
+    managerFunction();
 
-managerFunction();
+ }
+
+init();
