@@ -1,7 +1,12 @@
 
 
+  # [Demo Video](https://drive.google.com/file/d/1oCl1iLw9Wu21FEZc5WFupVyr55CLKtW8/view)
   
-# [Demo Video] (https://drive.google.com/file/d/1oCl1iLw9Wu21FEZc5WFupVyr55CLKtW8/view)
+  # Screenshot
+  
+  <img width="1440" alt="Screen Shot 2022-05-22 at 8 16 42 PM" src="https://user-images.githubusercontent.com/98934009/169722562-b41eaa38-3942-483d-9b04-6453bb49e6a8.png">
+
+  
   # Team Profile Generator 
   
   ## Description
